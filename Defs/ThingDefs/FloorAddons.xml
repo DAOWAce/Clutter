@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+
+	<ThingDef Name="BuildingBase" Abstract="True">
+		<category>Building</category>
+		<soundBulletHit>BulletImpactWood</soundBulletHit>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<surfaceNeeded>Light</surfaceNeeded>
+		<constructionEffect>ConstructMetal</constructionEffect>
+		<repairEffect>Repair</repairEffect>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>FloorAddonA</defName>
+		<eType>BuildingInert</eType>
+		<label>Zone Marker</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<texturePath>Clutter/Things/Building/Side_Floor_Addon</texturePath>
+		<altitudeLayer>Filth</altitudeLayer>
+		<pathCost>0</pathCost>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<maxHealth>150</maxHealth>
+		<description>Clutter Mod Misc:
+		
+Colonists like the anti-triping feature in it.</description>
+		<workToBuild>17</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>2</count>
+			</li>
+		</costList>
+		<rotatable>true</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<beauty>Nice</beauty>
+		<surfaceNeeded>Light</surfaceNeeded>
+		<designationCategory>Misc</designationCategory>
+		<constructionEffect>ConstructDig</constructionEffect>
+		<repairEffect>ConstructDig</repairEffect>
+	</ThingDef>
+
+
+
+
+
+
+</Buildings>

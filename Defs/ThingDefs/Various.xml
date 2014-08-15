@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefinitions>
+<ThingDef>
+		<defName>PlasmaSponge</defName>
+		<eType>Item</eType>
+		<label>Cold Plasma Sponge</label>
+		<category>Item</category>
+		<thingClass>Clutter.PlasmaSponge</thingClass>
+		<tickerType>Normal</tickerType>
+		<selectable>true</selectable>
+		<PathCost>90</PathCost>
+		
+		<comps>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>3</glowRadius>
+				<glowColor>(138,246,255,0)</glowColor>
+			</li>
+		</comps>
+		<description>
+Sucks heat from anything that its standing on.
+		</description>
+		<textureFolderPath>Clutter/Devices/PlasmaCloud</textureFolderPath>
+		<baseMaterialType>MotePostLight</baseMaterialType>
+		<altitudeLayer>PawnState</altitudeLayer>
+		<useStandardHealth>false</useStandardHealth>
+		<beauty>NiceTiny</beauty>
+	</ThingDef>
+	
+	
+	<ThingDef>
+		<defName>HoloOne</defName>
+		<eType>Item</eType>
+		<label>Hologram</label>
+		<category>Item</category>
+		<thingClass>Clutter.Hologram</thingClass>
+		<texturePath>Clutter/Holo/Holo_Object1</texturePath>
+		<tickerType>Normal</tickerType>
+		<selectable>true</selectable>
+		<flammability>0.0</flammability>
+		<comps>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>2</glowRadius>
+				<glowColor>(52,210,255,1)</glowColor>
+			</li>
+		</comps>
+		<description>
+Holographic projection
+		</description>
+		
+		<pathCost>80</pathCost>
+		
+		<altitudeLayer>Blueprint</altitudeLayer>
+		<useStandardHealth>false</useStandardHealth>
+		<beauty>Gorgeous</beauty>
+	</ThingDef>
+	
+	<ThingDef>
+		<defName>PlasmaSpark</defName>
+		<label>PlasmaSpark</label>
+		<thingClass>Clutter.Bullet_Sponge</thingClass>
+		<texturePath>Clutter/Devices/SpongeBullet</texturePath>
+		<category>Projectile</category>
+		<eType>Projectile</eType>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<baseMaterialType>Transparent</baseMaterialType>
+		<useStandardHealth>false</useStandardHealth>
+		<neverMultiSelect>true</neverMultiSelect>
+		<projectile>
+			<speed>16</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef>
+		<defName>CommUnitTop</defName>
+		<eType>Item</eType>
+		<label>Comm Unit Antena</label>
+		<category>Item</category>
+		<thingClass>Clutter.RadarAntena</thingClass>
+		<texturePath>Clutter/Devices/ComUnitTop</texturePath>
+		<tickerType>Normal</tickerType>
+		<selectable>false</selectable>
+		<flammability>0.0</flammability>
+		<overdraw>true</overdraw>
+		<size>2,2</size>
+		<description>
+Communication Unit Relay
+		</description>
+		<pathCost>80</pathCost>
+		<comps>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>3</glowRadius>
+				<glowColor>(217,217,217,0)</glowColor>
+			</li>
+		</comps>
+		<baseMaterialType>Transparent</baseMaterialType>
+		<altitudeLayer>Blueprint</altitudeLayer>
+		<useStandardHealth>false</useStandardHealth>
+		<beauty>Gorgeous</beauty>
+	</ThingDef>
+	
+	</ThingDefinitions>
+	
+	

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+	<ThingDef Name="BaseGun" Abstract="True">
+		<category>Item</category>
+		<eType>Equipment</eType>
+		<thingClass>Equipment</thingClass>
+		<label>Gun</label>
+		<equipmentType>Primary</equipmentType>
+		<isGun>True</isGun>
+		<pathCost>10</pathCost>
+		<useStandardHealth>True</useStandardHealth>
+		<selectable>True</selectable>
+		<maxHealth>100</maxHealth>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<techLevel>Midworld</techLevel>
+		<storeCategories>
+			<li>Weapons</li>
+		</storeCategories>
+		<comps>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+		</comps>
+		<verb>
+      <category>Nonnative</category>
+			<verbClass>Clutter.SpongeGun</verbClass>
+			<cooldownTicks>5</cooldownTicks>
+			<label>VerbGun</label>
+			<description>Fire a bullet.</description>
+			<hasStandardCommand>true</hasStandardCommand>
+			<targetParams>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>true</canTargetBuildings>
+				<worldObjectTargetsMustBeAutoAttackable>true</worldObjectTargetsMustBeAutoAttackable>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<canMiss>false</canMiss>
+		</verb>
+	</ThingDef>
+
+	
+		
+	
+
+	<ThingDef ParentName="BaseGun">
+		<defName>SpongeGun</defName>
+		<label>Sponge Gun</label>
+		<description>Ancient fire extinguisher</description>
+		<texturePath>Clutter/Devices/SpongeGun</texturePath>
+		<soundInteract>InteractChargeRifle</soundInteract>
+		<tradersCarry>false</tradersCarry>
+		<basePrice>60</basePrice>
+		
+		<verb>
+			<projectileDef>PlasmaSpark</projectileDef>
+			<accuracyTouch>1</accuracyTouch>
+      <accuracyShort>1</accuracyShort>
+      <accuracyMedium>1</accuracyMedium>
+      <accuracyLong>1</accuracyLong>
+			<warmupTicks>68</warmupTicks>
+			<range>7</range>
+			<fireSound>ShotChargeRifle</fireSound>
+		</verb>
+	</ThingDef>
+
+</ThingDefs>

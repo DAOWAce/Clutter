@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+
+	<ThingDef Name="BuildingBase" Abstract="True">
+		<category>Building</category>
+		<soundBulletHit>BulletImpactMetal</soundBulletHit>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<surfaceNeeded>Light</surfaceNeeded>
+		<constructionEffect>ConstructMetal</constructionEffect>
+		<repairEffect>Repair</repairEffect>
+	</ThingDef>
+
+	<!-- =================== Various ==================-->
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>SentinelTurretA</defName>
+		<eType>Building_Turret</eType>
+		<label>Sentinel Turret</label>
+		<thingClass>Building_TurretGun</thingClass>
+		<texturePath>Clutter/Things/Building/TurretBase</texturePath>
+		<uiIconPath>Clutter/Things/Building/TurretTopIco</uiIconPath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<maxHealth>1250</maxHealth>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li>
+				<compClass>CompExplosive</compClass>
+				<explosiveRadius>0.0</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+			<li><compClass>CompForbiddable</compClass></li>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>1000</basePowerConsumption>
+			</li>
+		</comps>
+		<description>Bigger, thougher and nastier brother of improvised turret also hell alot more expensive and power hungry.</description>
+		<flammability>4.0</flammability>
+		<size>(1,1)</size>
+		<passability>Impassable</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.8</fillPercent>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>400</count>
+			</li>
+			<li>
+				<thingDef>Silver</thingDef>
+				<count>2000</count>
+			</li>
+		</costList>
+		<workToBuild>2000</workToBuild>
+		<overdraw>true</overdraw>
+		<combatTargetBuilding>true</combatTargetBuilding>
+		<beauty>Neutral</beauty>
+		<filthLeavings>
+      <li>
+        <thingDef>SlagRubble</thingDef>
+        <count>1</count>
+      </li>
+    </filthLeavings>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<surfaceNeeded>Light</surfaceNeeded>
+		<designationCategory>Security</designationCategory>
+		<specialDisplayRadius>49.9</specialDisplayRadius>
+		<building>
+			<turretGunDef>Gun_SentinelTurret</turretGunDef>
+			<turretburstCooldownTicks>120</turretburstCooldownTicks>
+			<turretTopTexturePath>Clutter/Things/Building/TurretTop</turretTopTexturePath>
+		</building>
+		
+	</ThingDef>
+
+	<!-- ============================================== -->
+
+</Buildings>

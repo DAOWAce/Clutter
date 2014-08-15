@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+
+	<ThingDef Name="BuildingBase" Abstract="True">
+		<category>Building</category>
+		<soundBulletHit>BulletImpactMetal</soundBulletHit>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<surfaceNeeded>Light</surfaceNeeded>
+		<constructionEffect>ConstructMetal</constructionEffect>
+		
+		<repairEffect>Repair</repairEffect>
+	</ThingDef>
+
+
+<!--================ Beds ================-->
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterBedA</defName>
+		<EType>Bed</EType>
+		<Label>SlabBed</Label>
+		<Description>Clutter Mod Furniture:
+		
+Slab bed Rest effectiveness: 200%</Description>
+		<ThingClass>Building_Bed</ThingClass>
+		<TexturePath>Clutter/Things/Building/BedA</TexturePath>
+		<AltitudeLayer>Waist</AltitudeLayer>
+		<MaxHealth>150</MaxHealth>
+		<Size>(1,2)</Size>
+		<WorkToBuild>1175</WorkToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>25</count>
+			</li>
+		</costList>
+	<building>
+	  <bed_graphicPath_forPrisoner>Clutter/Things/Building/BedA_P</bed_graphicPath_forPrisoner>
+      <Bed_ShowSleeperBody>false</Bed_ShowSleeperBody>
+      <Bed_HealTickInterval>1500</Bed_HealTickInterval>
+      <bed_RestEffectiveness>1.3</bed_RestEffectiveness>
+    </building>
+		<Overdraw>True</Overdraw>
+		<Beauty>Gorgeous</Beauty>
+		<fillPercent>0.4</fillPercent>
+		<PathCost>60</PathCost>
+		<LeaveResourcesWhenKilled>True</LeaveResourcesWhenKilled>
+		<killedLeavings>
+			<li>
+				<thingDef>ChunkSlag</thingDef>
+				<count>1</count>
+			</li>
+		</killedLeavings>
+		
+		<StaticSunShadowHeight>0.17</StaticSunShadowHeight>
+		<CastEdgeShadows>True</CastEdgeShadows>
+		<DesignationCategory>Furniture</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
+		<DrawGUIOverlay>True</DrawGUIOverlay>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterPodBed</defName>
+		<EType>Bed</EType>
+		<Label>PodBed</Label>
+		<Description>Clutter Mod Furniture:
+		
+A bit odd pod like bed. Rest effectiveness: 200%</Description>
+		<ThingClass>Building_Bed</ThingClass>
+		<TexturePath>Clutter/Things/Building/BedA2</TexturePath>
+		<AltitudeLayer>Waist</AltitudeLayer>
+		<MaxHealth>150</MaxHealth>
+		<Size>(1,2)</Size>
+		<WorkToBuild>175</WorkToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>25</count>
+			</li>
+		</costList>
+	<building>
+      <bed_graphicPath_forPrisoner>Clutter/Things/Building/BedA_P2</bed_graphicPath_forPrisoner>
+      <Bed_ShowSleeperBody>False</Bed_ShowSleeperBody>
+      <Bed_HealTickInterval>1500</Bed_HealTickInterval>
+      <bed_RestEffectiveness>1.3</bed_RestEffectiveness>
+    </building>
+		<Overdraw>True</Overdraw>
+		<Beauty>Gorgeous</Beauty>
+		<fillPercent>0.4</fillPercent>
+		<PathCost>60</PathCost>
+		<LeaveResourcesWhenKilled>True</LeaveResourcesWhenKilled>
+		<killedLeavings>
+			<li>
+				<thingDef>ChunkSlag</thingDef>
+				<count>1</count>
+			</li>
+		</killedLeavings>
+		
+		<StaticSunShadowHeight>0.17</StaticSunShadowHeight>
+		<CastEdgeShadows>True</CastEdgeShadows>
+		<DesignationCategory>Furniture</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
+		<DrawGUIOverlay>True</DrawGUIOverlay>
+	</ThingDef>
+	
+<!--================ Seats ================-->
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterCouchA</defName>
+		<eType>Building_Chair</eType>
+		<label>Couch</label>
+		<thingClass>Building_Chair</thingClass>
+		<texturePath>Clutter/Things/Building/CouchA</texturePath>
+		<beauty>NiceTiny</beauty>
+		<altitudeLayer>Waist</altitudeLayer>
+		<maxHealth>75</maxHealth>
+		<description>Clutter Mod Furniture
+		
+Its not making colonist lazy, in theory.</description>
+		<size>(2,1)</size>
+		<workToBuild>750</workToBuild>
+		<flammability>1.0</flammability>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>20</count>
+			</li>
+		</costList>
+		<filthLeavings>
+			<li>
+				<thingDef>SlagRubble</thingDef>
+				<count>1</count>
+			</li>
+		</filthLeavings>
+
+<comps>
+<li>
+<compClass>CompGatherSpot</compClass>
+</li>
+</comps>
+		<overdraw>false</overdraw>
+		<pathCost>30</pathCost>
+		<building>
+      <bed_RestEffectiveness>1.4</bed_RestEffectiveness>
+    </building>
+		<designationCategory>Furniture</designationCategory>
+		<sunShadowInfo>
+			<basewidth>0.3</basewidth>
+			<baseHeight>0.3</baseHeight>
+			<tallness>0.6</tallness>
+		</sunShadowInfo>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterSeatA</defName>
+		<eType>Building_Chair</eType>
+		<label>Seat</label>
+		<thingClass>Building_Chair</thingClass>
+		<texturePath>Clutter/Things/Building/Seat</texturePath>
+		
+		<beauty>NiceTiny</beauty>
+		<altitudeLayer>Waist</altitudeLayer>
+		<maxHealth>75</maxHealth>
+		<description>Clutter Mod Furniture
+		
+Old fasion, confy and fully out of metal.</description>
+		<size>(1,1)</size>
+		<workToBuild>150</workToBuild>
+		<flammability>1.0</flammability>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>15</count>
+			</li>
+		</costList>
+		<filthLeavings>
+			<li>
+				<thingDef>SlagRubble</thingDef>
+				<count>1</count>
+			</li>
+		</filthLeavings>
+		<overdraw>false</overdraw>
+		<pathCost>30</pathCost>
+		<building>
+      <bed_RestEffectiveness>1</bed_RestEffectiveness>
+    </building>
+		<designationCategory>Furniture</designationCategory>
+		
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>RoundChair</defName>
+		<eType>Building_Chair</eType>
+		<label>Round Chair</label>
+		<thingClass>Building_Chair</thingClass>
+		<texturePath>Clutter/Things/Building/RoundChair</texturePath>
+		<beauty>NiceTiny</beauty>
+		<altitudeLayer>Waist</altitudeLayer>
+		<maxHealth>75</maxHealth>
+		<description>Clutter Mod Furniture
+		
+Round chair thers not much to say.</description>
+		<size>(1,1)</size>
+		<workToBuild>150</workToBuild>
+		<flammability>1.0</flammability>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>15</count>
+			</li>
+		</costList>
+		<filthLeavings>
+			<li>
+				<thingDef>SlagRubble</thingDef>
+				<count>1</count>
+			</li>
+		</filthLeavings>
+		<overdraw>false</overdraw>
+		<pathCost>30</pathCost>
+		<building>
+      <bed_RestEffectiveness>1.2</bed_RestEffectiveness>
+    </building>
+		<designationCategory>Furniture</designationCategory>
+		<sunShadowInfo>
+			<basewidth>0.3</basewidth>
+			<baseHeight>0.3</baseHeight>
+			<tallness>0.6</tallness>
+		</sunShadowInfo>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterStoolA</defName>
+		<eType>Building_Chair</eType>
+		<label>Stool</label>
+		<thingClass>Building_Chair</thingClass>
+		<texturePath>Clutter/Things/Building/Stool</texturePath>
+		<beauty>NiceTiny</beauty>
+		<altitudeLayer>Waist</altitudeLayer>
+		<maxHealth>150</maxHealth>
+		<description>Clutter Mod Furniture
+		
+Small, durable, handy in bar fights.</description>
+		<size>(1,1)</size>
+		<workToBuild>300</workToBuild>
+		<flammability>1.0</flammability>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>15</count>
+			</li>
+		</costList>
+		<filthLeavings>
+			<li>
+				<thingDef>SlagRubble</thingDef>
+				<count>1</count>
+			</li>
+		</filthLeavings>
+		<overdraw>false</overdraw>
+		<pathCost>30</pathCost>
+		<building>
+      <bed_RestEffectiveness>0.78</bed_RestEffectiveness>
+    </building>
+		<designationCategory>Furniture</designationCategory>
+		<sunShadowInfo>
+			<basewidth>0.3</basewidth>
+			<baseHeight>0.3</baseHeight>
+			<tallness>0.6</tallness>
+		</sunShadowInfo>
+	</ThingDef>
+	
+<!--================ Tables ================-->
+	
+	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterSquareTableModern</defName>
+		<eType>Building_Table</eType>
+		<label>Modern Table (Square)</label>
+		<thingClass>Clutter.Table_Square</thingClass>
+		<texturePath>Clutter/Tables/TableSpacerSquare</texturePath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<maxHealth>300</maxHealth>
+		<beauty>NiceTiny</beauty>
+		<description>Clutter Mod Furniture:
+		
+		
+Standart square table, just a bit thougher.
+</description>
+		<size>(2,2)</size>
+		<workToBuild>300</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>70</count>
+			</li>
+		</costList>
+		<overdraw>false</overdraw>
+		<passability>PassThroughOnly</passability>
+		<pathCost>60</pathCost>
+		<fillPercent>0.8</fillPercent>
+		<killedLeavings>
+			<li>
+				<thingDef>ChunkSlag</thingDef>
+				<count>1</count>
+			</li>
+		</killedLeavings>
+		<filthLeavings>
+			<li>
+				<thingDef>SlagRubble</thingDef>
+				<count>1</count>
+			</li>
+		</filthLeavings>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<designationCategory>Furniture</designationCategory>
+		<researchPrerequisite>TableDesign</researchPrerequisite>
+		<itemSurface>true</itemSurface>
+		<comps>
+			<li>
+				<compClass>CompGatherSpot</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterSmallTableModern</defName>
+		<eType>Building_Table</eType>
+		<label>Modern Table (Small)</label>
+		<thingClass>Clutter.Table_Small</thingClass>
+		<texturePath>Clutter/Tables/TableSpacerSmallClean</texturePath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<maxHealth>300</maxHealth>
+		<beauty>NiceTiny</beauty>
+		<description>Clutter Mod Furniture:
+		
+Small table for thous antisocial types</description>
+		<size>(1,1)</size>
+		<workToBuild>300</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>24</count>
+			</li>
+			<li>
+				<thingDef>WoodLog</thingDef>
+				<count>16</count>
+			</li>
+			
+		</costList>
+		<overdraw>false</overdraw>
+		<passability>PassThroughOnly</passability>
+		<pathCost>60</pathCost>
+		<fillPercent>0.3</fillPercent>
+		<killedLeavings>
+			<li>
+				<thingDef>ChunkSlag</thingDef>
+				<count>1</count>
+			</li>
+		</killedLeavings>
+		<filthLeavings>
+			<li>
+				<thingDef>SlagRubble</thingDef>
+				<count>1</count>
+			</li>
+		</filthLeavings>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<designationCategory>Furniture</designationCategory>
+		<researchPrerequisite>TableDesign</researchPrerequisite>
+		<itemSurface>true</itemSurface>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterMediumTableModern</defName>
+		<eType>Building_Table</eType>
+		<label>Modern Table (Medium)</label>
+		<thingClass>Clutter.Table_Medium</thingClass>
+		<texturePath>Clutter/Tables/TableSpacerMediumClean</texturePath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<maxHealth>300</maxHealth>
+		<beauty>NiceTiny</beauty>
+		<description>Clutter Mod Furniture:
+		
+Medium size table
+</description>
+		<size>(2,1)</size>
+		<workToBuild>300</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>60</count>
+			</li>
+		</costList>
+		<overdraw>false</overdraw>
+		<passability>PassThroughOnly</passability>
+		<pathCost>60</pathCost>
+		<fillPercent>0.8</fillPercent>
+		<killedLeavings>
+			<li>
+				<thingDef>ChunkSlag</thingDef>
+				<count>1</count>
+			</li>
+		</killedLeavings>
+		<filthLeavings>
+			<li>
+				<thingDef>SlagRubble</thingDef>
+				<count>1</count>
+			</li>
+		</filthLeavings>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<researchPrerequisite>TableDesign</researchPrerequisite>
+		<designationCategory>Furniture</designationCategory>
+		 <itemSurface>true</itemSurface>
+	</ThingDef>
+
+<!--================ Function Tables ================-->
+
+
+<ThingDef ParentName="BuildingBase">
+		<defName>ServingTable</defName>
+		<eType>BuildingComplex</eType>
+		<label>Serving Table</label>
+		<thingClass>Building_Storage</thingClass>
+		<texturePath>Clutter/Things/Building/ServingTableA</texturePath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<passability>Impassable</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<maxHealth>300</maxHealth>
+		<beauty>Nice</beauty>
+		<flammability>1.0</flammability>
+		<description>Clutter Mod Furniture:
+		
+Used for storing all kinds of meals.
+Its made of plastic!.</description>
+		<size>(1,2)</size>
+		<workToBuild>300</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>80</count>
+			</li>
+			
+		</costList>
+		<overdraw>false</overdraw>
+		<killedLeavings>
+			<li>
+				<thingDef>SlagRubble</thingDef>
+				<count>1</count>
+			</li>
+		</killedLeavings>
+		<building>
+		<fixedStorageSettings>
+			<priority>Important</priority>
+			<allowances>
+				<categories>
+					<li>FoodMeals</li>
+				</categories>
+			</allowances>
+		</fixedStorageSettings>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<designationCategory>Furniture</designationCategory>
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
+		<itemSurface>true</itemSurface>
+	</ThingDef>
+
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterResourceTable</defName>
+		<eType>BuildingComplex</eType>
+		<label>Resource Table</label>
+		<thingClass>Building_Storage</thingClass>
+		<texturePath>Clutter/Things/Building/Resource_Table2</texturePath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<passability>Impassable</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<maxHealth>300</maxHealth>
+		<beauty>NiceTiny</beauty>
+		<flammability>1.0</flammability>
+		<description>Clutter Mod Production:
+		
+Now your colonists wont stand in a pile of radioactive uranium, they will have it on face level.
+(Store for resources)</description>
+		<size>(2,1)</size>
+		<workToBuild>300</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>100</count>
+			</li>
+		</costList>
+		<overdraw>false</overdraw>
+		<killedLeavings>
+			<li>
+				<thingDef>ChunkSlag</thingDef>
+				<count>1</count>
+			</li>
+		</killedLeavings>
+		<filthLeavings>
+			<li>
+				<thingDef>SlagRubble</thingDef>
+				<count>2</count>
+			</li>
+		</filthLeavings>
+		<building>
+		<fixedStorageSettings>
+			<priority>Important</priority>
+			<allowances>
+				<categories>
+					<li>ResourcesRaw</li>
+				</categories>
+			</allowances>
+		</fixedStorageSettings>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<designationCategory>Production</designationCategory>
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
+		<itemSurface>true</itemSurface>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterMedicKitTable</defName>
+		<eType>BuildingComplex</eType>
+		<label>Medic Kit Storage</label>
+		<thingClass>Building_Storage</thingClass>
+		<texturePath>Clutter/Things/Building/MedicKitTable</texturePath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<passability>Impassable</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<maxHealth>300</maxHealth>
+		<beauty>NiceTiny</beauty>
+		<flammability>1.0</flammability>
+		<description>Clutter Mod Furniture:
+		
+Safe way to store your dru.. medicine.
+(Store for medikits)</description>
+		<size>(1,1)</size>
+		<workToBuild>300</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>70</count>
+			</li>
+		</costList>
+		<overdraw>false</overdraw>
+		<killedLeavings>
+			<li>
+				<thingDef>ChunkSlag</thingDef>
+				<count>1</count>
+			</li>
+		</killedLeavings>
+		<filthLeavings>
+			<li>
+				<thingDef>SlagRubble</thingDef>
+				<count>2</count>
+			</li>
+		</filthLeavings>
+		<building>
+		<fixedStorageSettings>
+			<priority>Important</priority>
+			<allowances>
+				<ThingDefs>
+					<li>Medicine</li>
+				</ThingDefs>
+			</allowances>
+		</fixedStorageSettings>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<designationCategory>Furniture</designationCategory>
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
+		<itemSurface>true</itemSurface>
+	
+	</ThingDef>
+
+	
+  <ThingDef ParentName="BuildingBase">
+		<defName>ClutterAlloyHydroponicsBasinM</defName>
+		<eType>BuildingComplex</eType>
+		<label>Alloy Hydroponics basin (Medium)</label>
+		<thingClass>Building_PlantGrower</thingClass>
+		<texturePath>Clutter/Things/Building/PlantPot2x1</texturePath>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<maxHealth>200</maxHealth>
+		<description>Clutter Mod Furniture:
+		
+Medium size modified hydrophonic pot.</description>
+		<size>(2,1)</size>
+		<beauty>Nice</beauty>
+		<workToBuild>800</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>40</count>
+			</li>
+		</costList>
+		<inspectorTabs>
+			<li>ITab_Growing</li>
+		</inspectorTabs>
+		<overdraw>false</overdraw>
+		<fertility>3.5</fertility>
+		<building>
+			<defaultPlantToGrow>PlantPotato</defaultPlantToGrow>
+			<plantsDestroyWithMe>true</plantsDestroyWithMe>
+			<supportsPlants>true</supportsPlants>
+		</building>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>40</basePowerConsumption>
+			</li>
+		</comps>
+		<killedLeavings>
+			<li>
+				<thingDef>ChunkSlag</thingDef>
+				<count>2</count>
+			</li>
+		</killedLeavings>
+		<filthLeavings>
+			<li>
+				<thingDef>SlagRubble</thingDef>
+				<count>1</count>
+			</li>
+		</filthLeavings>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<researchPrerequisite>Hydroponics</researchPrerequisite>
+		<surfaceNeeded>Heavy</surfaceNeeded>
+		<designationCategory>Furniture</designationCategory>
+		<itemSurface>true</itemSurface>
+    
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="BuildingBase">
+		<defName>ClutterAlloyHydroponicsBasinB</defName>
+		<eType>BuildingComplex</eType>
+		<label>Alloy Hydroponics basin (Big)</label>
+		<thingClass>Building_PlantGrower</thingClass>
+		<texturePath>Clutter/Things/Building/PlantPot3x1</texturePath>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<maxHealth>300</maxHealth>
+		<description>Clutter Mod Furniture:
+		
+2x2 Squaresize modified hydrophonic pot.</description>
+		<size>(3,1)</size>
+		<beauty>Nice</beauty>
+		<workToBuild>1200</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>60</count>
+			</li>
+		</costList>
+		<inspectorTabs>
+			<li>ITab_Growing</li>
+		</inspectorTabs>
+		<overdraw>false</overdraw>
+		<fertility>3.5</fertility>
+		<building>
+			<defaultPlantToGrow>PlantPotato</defaultPlantToGrow>
+			<plantsDestroyWithMe>true</plantsDestroyWithMe>
+			<supportsPlants>true</supportsPlants>
+		</building>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>40</basePowerConsumption>
+			</li>
+		</comps>
+		<killedLeavings>
+			<li>
+				<thingDef>ChunkSlag</thingDef>
+				<count>2</count>
+			</li>
+		</killedLeavings>
+		<filthLeavings>
+			<li>
+				<thingDef>SlagRubble</thingDef>
+				<count>1</count>
+			</li>
+		</filthLeavings>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<researchPrerequisite>Hydroponics</researchPrerequisite>
+		<surfaceNeeded>Heavy</surfaceNeeded>
+		<designationCategory>Furniture</designationCategory>
+		<itemSurface>true</itemSurface>
+    
+  </ThingDef>
+  
+
+  
+  <ThingDef ParentName="BuildingBase">
+		<defName>ClutterAlloyHydroponicsBasinS</defName>
+		<eType>BuildingComplex</eType>
+		<label>Alloy Hydroponics basin (Square)</label>
+		<thingClass>Building_PlantGrower</thingClass>
+		<texturePath>Clutter/Things/Building/PlantPot2x2</texturePath>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<maxHealth>400</maxHealth>
+		<description>Clutter Mod Furniture:
+		
+Small size modified hydrophonic pot.</description>
+		<size>(2,2)</size>
+		<beauty>Nice</beauty>
+		<workToBuild>1600</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>80</count>
+			</li>
+		</costList>
+		<inspectorTabs>
+			<li>ITab_Growing</li>
+		</inspectorTabs>
+		<overdraw>false</overdraw>
+		<fertility>3.5</fertility>
+		<building>
+			<defaultPlantToGrow>PlantPotato</defaultPlantToGrow>
+			<plantsDestroyWithMe>true</plantsDestroyWithMe>
+			<supportsPlants>true</supportsPlants>
+		</building>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>40</basePowerConsumption>
+			</li>
+		</comps>
+		<killedLeavings>
+			<li>
+				<thingDef>ChunkSlag</thingDef>
+				<count>2</count>
+			</li>
+		</killedLeavings>
+		<filthLeavings>
+			<li>
+				<thingDef>SlagRubble</thingDef>
+				<count>1</count>
+			</li>
+		</filthLeavings>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<researchPrerequisite>Hydroponics</researchPrerequisite>
+		<surfaceNeeded>Heavy</surfaceNeeded>
+		<designationCategory>Furniture</designationCategory>
+		<itemSurface>true</itemSurface>
+    
+  </ThingDef>
+
+
+
+
+
+</Buildings>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+
+	<ThingDef Name="BuildingBase" Abstract="True">
+		<category>Building</category>
+		<soundBulletHit>BulletImpactMetal</soundBulletHit>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<surfaceNeeded>Light</surfaceNeeded>
+		<constructionEffect>ConstructMetal</constructionEffect>
+		<repairEffect>Repair</repairEffect>
+	</ThingDef>
+		
+<ThingDef ParentName="BuildingBase">
+		<defName>AutoFireSuppression</defName>
+		<eType>BuildingInert</eType>
+		<label>Sponge Dispenser</label>
+		<thingClass>Clutter.AFS</thingClass>
+		<category>Building</category>
+		<texturePath>Clutter/Devices/AFS_ON</texturePath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<pathCost>60</pathCost>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.5</fillPercent>
+		<maxHealth>10</maxHealth>
+		<size>1,1</size>
+		<description>Clutter Mod Security:
+(One time use)
+Creates cold plasma spoonge on any heat source greater that "Aagh my hair is on fire".
+</description>
+		<workToBuild>5</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>25</count>
+			</li>
+		</costList>
+		<comps>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>1</glowRadius>
+				<glowColor>(180,255,0,2)</glowColor>
+			</li>
+		</comps>
+		<rotatable>true</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<beauty>NiceTiny</beauty>
+		<surfaceNeeded>Light</surfaceNeeded>
+		<designationCategory>Security</designationCategory>
+		<tickerType>Normal</tickerType>
+		<researchPrerequisite>AFS</researchPrerequisite>
+		<specialDisplayRadius>9.9</specialDisplayRadius>
+		<constructionEffect>ConstructDig</constructionEffect>
+		<repairEffect>ConstructDig</repairEffect>
+	</ThingDef>
+	</Buildings>

@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+
+	<ThingDef Name="BuildingBase" Abstract="True">
+		<category>Building</category>
+		<soundBulletHit>BulletImpactMetal</soundBulletHit>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<surfaceNeeded>Light</surfaceNeeded>
+		<constructionEffect>ConstructMetal</constructionEffect>
+		<repairEffect>Repair</repairEffect>
+	</ThingDef>
+		
+<ThingDef ParentName="BuildingBase">
+		<defName>ClutterCogCrate</defName>
+		<eType>BuildingInert</eType>
+		<label>Cog Carate</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<texturePath>Clutter/Things/Building/CogCrate</texturePath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<pathCost>60</pathCost>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<maxHealth>150</maxHealth>
+		<size>1,1</size>
+		<description>Clutter Mod Decoration:
+		
+Crate with a cog</description>
+		<workToBuild>17</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>50</count>
+			</li>
+		</costList>
+		<filthLeavings>
+			<li>
+				<thingDef>ChunkSlag</thingDef>
+				<count>2</count>
+			</li>
+		</filthLeavings>
+		<rotatable>true</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<beauty>NiceTiny</beauty>
+		<surfaceNeeded>Light</surfaceNeeded>
+		<designationCategory>Decoration</designationCategory>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<constructionEffect>ConstructDig</constructionEffect>
+		<repairEffect>ConstructDig</repairEffect>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterShelfA</defName>
+		<eType>BuildingInert</eType>
+		<label>Used Shelf</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<texturePath>Clutter/Things/Building/Shelf</texturePath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<pathCost>60</pathCost>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<maxHealth>150</maxHealth>
+		<description>Clutter Mod Decoration:
+		
+Already used shelf</description>
+		<workToBuild>50</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>50</count>
+			</li>
+		</costList>
+		<filthLeavings>
+			<li>
+				<thingDef>ChunkSlag</thingDef>
+				<count>2</count>
+			</li>
+		</filthLeavings>
+		<rotatable>true</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<beauty>NiceTiny</beauty>
+		<surfaceNeeded>Light</surfaceNeeded>
+		<designationCategory>Decoration</designationCategory>
+		<staticSunShadowHeight>0.05</staticSunShadowHeight>
+		<constructionEffect>ConstructDig</constructionEffect>
+		<repairEffect>ConstructDig</repairEffect>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterLockerA</defName>
+		<eType>BuildingInert</eType>
+		<label>Locker</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<texturePath>Clutter/Things/Building/Locker</texturePath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<pathCost>60</pathCost>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.3</fillPercent>
+		<maxHealth>150</maxHealth>
+		<description>Clutter Mod Decoration:
+		
+Simple hopefully still working locker</description>
+		<workToBuild>10</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>50</count>
+			</li>
+		</costList>
+		<filthLeavings>
+			<li>
+				<thingDef>ChunkSlag</thingDef>
+				<count>2</count>
+			</li>
+		</filthLeavings>
+		<rotatable>true</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<beauty>NiceTiny</beauty>
+		<surfaceNeeded>Light</surfaceNeeded>
+		<designationCategory>Decoration</designationCategory>
+		<constructionEffect>ConstructDig</constructionEffect>
+		<repairEffect>ConstructDig</repairEffect>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterTrashBin</defName>
+		<eType>BuildingComplex</eType>
+		<label>Trashbin (auto)</label>
+		<description>Clutter Mod Furniture:
+		
+Trashbin stol... barrowed from experimental lab of Haplo industries, it comes with short range cleaning robot.</description>
+		<thingClass>Clutter.Trashbin</thingClass>
+		<category>Building</category>
+		<texturePath>Clutter/Things/Building/TrashBin</texturePath>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<maxHealth>700</maxHealth>
+		<flammability>0.0</flammability>
+		<selectable>true</selectable>
+		<beauty>Nice</beauty>
+		<size>(1,1)</size>
+		<workToBuild>100</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>200</count>
+			</li>
+		</costList>
+		
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>100</basePowerConsumption>
+				
+			</li>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>7</glowRadius>
+				<glowColor>(180,255,0,1)</glowColor>
+			</li>
+		</comps>
+		<designationCategory>Furniture</designationCategory>
+		<sunShadowInfo>
+			<basewidth>0.3</basewidth>
+			<baseHeight>0.3</baseHeight>
+			<tallness>0.6</tallness>
+			<offset>(0,0,-0.1)</offset>
+		</sunShadowInfo>
+		<rotatable>true</rotatable>
+		<tickerType>Normal</tickerType>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterCabinetA</defName>
+		<eType>BuildingInert</eType>
+		<label>Cabinet</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<texturePath>Clutter/Things/Building/Cabinet</texturePath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<pathCost>60</pathCost>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.3</fillPercent>
+		<maxHealth>150</maxHealth>
+		<description>Clutter Mod Decoration:
+		
+Place where you can seal your socks with 20 digit code</description>
+		<workToBuild>10</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>50</count>
+			</li>
+		</costList>
+		<filthLeavings>
+			<li>
+				<thingDef>ChunkSlag</thingDef>
+				<count>2</count>
+			</li>
+		</filthLeavings>
+		<rotatable>true</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<beauty>NiceTiny</beauty>
+		<surfaceNeeded>Light</surfaceNeeded>
+		<designationCategory>Decoration</designationCategory>
+		<constructionEffect>ConstructDig</constructionEffect>
+		<repairEffect>ConstructDig</repairEffect>
+	</ThingDef>
+			
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterDeskA</defName>
+		<eType>BuildingInert</eType>
+		<label>Desk</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<texturePath>Clutter/Things/Building/Desk</texturePath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<pathCost>60</pathCost>
+		<passability>Impassable</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.3</fillPercent>
+		<maxHealth>300</maxHealth>
+		<size>(2,1)</size>
+		<description>Clutter Mod Decoration:
+		
+Come with a plastic plant and full coffie cup!</description>
+		<workToBuild>100</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>100</count>
+			</li>
+		</costList>
+		<rotatable>true</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<beauty>NiceTiny</beauty>
+		<surfaceNeeded>Light</surfaceNeeded>
+		<designationCategory>Decoration</designationCategory>
+		<constructionEffect>ConstructDig</constructionEffect>
+		<repairEffect>ConstructDig</repairEffect>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterMedicMixerA</defName>
+		<eType>BuildingInert</eType>
+		<label>Lab Mixing Machine</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<texturePath>Clutter/Things/Building/MedicalMixer</texturePath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<pathCost>60</pathCost>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<maxHealth>200</maxHealth>
+		<description>Clutter Mod Decoration:
+
+Advenced looking version of kitchen mixer. Now with more buttons!</description>
+		<workToBuild>10</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>100</count>
+			</li>
+			<li>
+				<thingDef>Silver</thingDef>
+				<count>20</count>
+			</li>
+		</costList>
+		<rotatable>true</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<beauty>NiceTiny</beauty>
+		<surfaceNeeded>Light</surfaceNeeded>
+		<designationCategory>Decoration</designationCategory>
+		<constructionEffect>ConstructDig</constructionEffect>
+		<repairEffect>ConstructDig</repairEffect>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterToilet</defName>
+		<eType>BuildingInert</eType>
+		<label>Throne 4000</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<texturePath>Clutter/Things/Building/Toilet</texturePath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<pathCost>60</pathCost>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<maxHealth>500</maxHealth>
+		<description>Clutter Mod Decoration:
+		
+Delux edition now with auto-flush feature!</description>
+		<workToBuild>10</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>170</count>
+			</li>
+			<li>
+				<thingDef>Silver</thingDef>
+				<count>20</count>
+			</li>
+		</costList>
+		<rotatable>true</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<beauty>Nice</beauty>
+		<surfaceNeeded>Light</surfaceNeeded>
+		<designationCategory>Decoration</designationCategory>
+		<constructionEffect>ConstructDig</constructionEffect>
+		<repairEffect>ConstructDig</repairEffect>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterMainframeS</defName>
+		<eType>BuildingInert</eType>
+		<label>Mainframe</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<texturePath>Clutter/Things/Building/MainframeSmall</texturePath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<pathCost>60</pathCost>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<maxHealth>200</maxHealth>
+		<description>Clutter Mod Decoration:
+		
+Small versions of Skynet 9000, now with whole 2,9% less probability of taking over the world.</description>
+		<workToBuild>10</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>70</count>
+			</li>
+			<li>
+				<thingDef>Silver</thingDef>
+				<count>200</count>
+			</li>
+		</costList>
+		<rotatable>true</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<beauty>Nice</beauty>
+		<surfaceNeeded>Light</surfaceNeeded>
+		<designationCategory>Decoration</designationCategory>
+		<constructionEffect>ConstructDig</constructionEffect>
+		<repairEffect>ConstructDig</repairEffect>
+	</ThingDef>
+		
+</Buildings>

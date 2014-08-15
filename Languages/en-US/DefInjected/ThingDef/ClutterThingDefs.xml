@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <!-- GlowingStuff.xml   -->
+  <ClutterFloorLampA.label>Floor Lamp</ClutterFloorLampA.label>
+	<ClutterFloorLampA.description>Clutter Mod Furniture:
+		
+Simple floor lamp</ClutterFloorLampA.description>
+
+<ClutterWierdLamp.label>Wierd lamp</ClutterWierdLamp.label>
+	<ClutterWierdLamp.description>Clutter Mod Furniture:
+		
+More advenced lamp in look temrs only</ClutterWierdLamp.description>
+
+<ClutterWierdLampA.label>Wierd lamp blue</ClutterWierdLampA.label>
+	<ClutterWierdLampA.description>Clutter Mod Furniture:
+		
+Bluish glowing wierd looking lamp</ClutterWierdLampA.description>
+
+<ClutterWierdLampB.label>Wierd lamp red</ClutterWierdLampB.label>
+	<ClutterWierdLampB.description>Clutter Mod Furniture:
+		
+Redish glowing wierd looking lamp</ClutterWierdLampB.description>
+
+<ClutterLampC.label>Wierd lamp green</ClutterLampC.label>
+	<ClutterLampC.description>Clutter Mod Furniture:
+		
+Greenish glowing wierd looking lamp</ClutterLampC.description>		
+  
+	<HoloEmitter.label>Holographic Emitter</HoloEmitter.label>
+	<HoloEmitter.description>Clutter Mod Decoration:
+		
+Holographic projection of a plant</HoloEmitter.description>	
+
+<PlasmaGen.label>Experimental Plasma Generator</PlasmaGen.label>
+	<PlasmaGen.description>Clutter Mod Power:
+
+Almost self sustaining plasma generator, can sustain up to two light bulbs!
+
+(Require power between energy discharges)</PlasmaGen.description>
+
+
+<!-- ASF.xml   -->
+
+<AutoFireSuppression.label>Sponge Dispenser</AutoFireSuppression.label>
+	<AutoFireSuppression.description>Clutter Mod Security:
+(One time use)
+Creates cold plasma spoonge on any heat source greater that "Aagh my hair is on fire".</AutoFireSuppression.description>
+
+<!-- Buildings.xml   -->
+
+<ClutterHoloNade.label>Nade Combat Dummie</ClutterHoloNade.label>
+	<ClutterHoloNade.description>Clutter Mod Security:
+		
+Combat dummie of mighty worrior Nadezhda.
+(Distract enemies from shooting at you)</ClutterHoloNade.description>
+
+<ClutterSilverWall.label>Silver Wall</ClutterSilverWall.label>
+	<ClutterSilverWall.description>Clutter Mod Structure:
+
+It`s a wall and it`s shiny!</ClutterSilverWall.description>
+
+<ClutterFence.label>Small Fence</ClutterFence.label>
+	<ClutterFence.description>Clutter Mod Structure:
+		
+To stop thous pesky creatures eating from your storage.</ClutterFence.description>
+
+<ClutterConcreteFenceA.label>Concrete Fence</ClutterConcreteFenceA.label>
+	<ClutterConcreteFenceA.description>Clutter Mod Structure:
+		
+High fence build mostly from concrete. Good as a cover and transmits power.</ClutterConcreteFenceA.description>
+
+<!-- Clutter.xml   -->
+
+<ClutterCogCrate.label>Cog Carate</ClutterCogCrate.label>
+	<ClutterCogCrate.description>Clutter Mod Decoration:
+		
+Crate with a cog.</ClutterCogCrate.description>
+
+<ClutterShelfA.label>Used Shelf</ClutterShelfA.label>
+	<ClutterShelfA.description>Clutter Mod Decoration:
+		
+Already used shelf.</ClutterShelfA.description>
+
+<ClutterLockerA.label>Locker</ClutterLockerA.label>
+	<ClutterLockerA.description>Clutter Mod Decoration:
+		
+Simple hopefully still working locker.</ClutterLockerA.description>
+
+<ClutterTrashBin.label>Trashbin (auto)</ClutterTrashBin.label>
+	<ClutterTrashBin.description>Clutter Mod Furniture:
+		
+Trashbin stol... barrowed from experimental lab of Haplo industries, it comes with short range cleaning robot.</ClutterTrashBin.description>
+
+<ClutterCabinetA.label>Cabinet</ClutterCabinetA.label>
+	<ClutterCabinetA.description>Clutter Mod Decoration:
+		
+Place where you can seal your socks with 20 digit code.</ClutterCabinetA.description>
+
+<ClutterDeskA.label>Desk</ClutterDeskA.label>
+	<ClutterDeskA.description>Clutter Mod Decoration:
+		
+Come with a plastic plant and full coffie cup!</ClutterDeskA.description>
+
+<ClutterMedicMixerA.label>Lab Mixing Machine</ClutterMedicMixerA.label>
+	<ClutterMedicMixerA.description>Clutter Mod Decoration:
+
+Advenced looking version of kitchen mixer. Now with more buttons!</ClutterMedicMixerA.description>
+
+<ClutterToilet.label>Throne 4000</ClutterToilet.label>
+	<ClutterToilet.description>Clutter Mod Decoration:
+		
+Delux edition now with auto-flush feature!</ClutterToilet.description>
+
+<ClutterMainframeS.label>Mainframe</ClutterMainframeS.label>
+	<ClutterMainframeS.description>Clutter Mod Decoration:
+		
+Small versions of Skynet 9000, now with whole 2,9% less probability of taking over the world.</ClutterMainframeS.description>
+
+<!-- FloorAddons.xml   -->
+
+<FloorAddonA.label>Zone Marker</FloorAddonA.label>
+	<FloorAddonA.description>Clutter Mod Misc:
+		
+Colonists like the anti-triping feature in it.</FloorAddonA.description>
+
+<!-- Furniture.xml   -->
+
+<ClutterBedA.label>SlabBed</ClutterBedA.label>
+	<ClutterBedA.description>Clutter Mod Furniture:
+		
+Slab bed Rest effectiveness: 200%</ClutterBedA.description>
+
+<ClutterPodBed.label>PodBed</ClutterPodBed.label>
+	<ClutterPodBed.description>Clutter Mod Furniture:
+		
+A bit odd pod like bed. Rest effectiveness: 200%</ClutterPodBed.description>
+
+<ClutterCouchA.label>Couch</ClutterCouchA.label>
+	<ClutterCouchA.description>Clutter Mod Furniture
+		
+Its not making colonist lazy, in theory.</ClutterCouchA.description>
+
+<ClutterSeatA.label>Seat</ClutterSeatA.label>
+	<ClutterSeatA.description>Clutter Mod Furniture
+		
+Old fasion, confy and fully out of metal.</ClutterSeatA.description>
+
+
+<RoundChair.label>Round Chair</RoundChair.label>
+	<RoundChair.description>Clutter Mod Furniture
+		
+Round chair thers not much to say.</RoundChair.description>
+
+<ClutterStoolA.label>Stool</ClutterStoolA.label>
+	<ClutterStoolA.description>Clutter Mod Furniture
+		
+Small, durable, handy in bar fights.</ClutterStoolA.description>
+
+
+<ClutterSquareTableModern.label>Modern Table (Square)</ClutterSquareTableModern.label>
+	<ClutterSquareTableModern.description>Clutter Mod Furniture:
+		
+		
+Standart square table, just a bit thougher.</ClutterSquareTableModern.description>
+
+<ClutterSmallTableModern.label>Modern Table (Small)</ClutterSmallTableModern.label>
+	<ClutterSmallTableModern.description>Clutter Mod Furniture:
+		
+Small table for thous antisocial types.</ClutterSmallTableModern.description>
+
+<ClutterMediumTableModern.label>Modern Table (Medium)</ClutterMediumTableModern.label>
+	<ClutterMediumTableModern.description>Clutter Mod Furniture:
+		
+Medium size table</ClutterMediumTableModern.description>
+
+<ServingTable.label>Serving Table</ServingTable.label>
+	<ServingTable.description>Clutter Mod Furniture:
+		
+Used for storing all kinds of meals.
+Its made of plastic!.</ServingTable.description>
+
+<ClutterResourceTable.label>Resource Table</ClutterResourceTable.label>
+	<ClutterResourceTable.description>Clutter Mod Production:
+		
+Now your colonists wont stand in a pile of radioactive uranium, they will have it on face thier level.
+(Store for resources)</ClutterResourceTable.description>
+
+<ClutterMedicKitTable.label>Medic Kit Storage</ClutterMedicKitTable.label>
+	<ClutterMedicKitTable.description>Clutter Mod Furniture:
+		
+Safe way to store your dru.. medicine.
+(Store for medikits)</ClutterMedicKitTable.description>
+
+<ClutterAlloyHydroponicsBasinM.label>Alloy Hydroponics basin (Medium)</ClutterAlloyHydroponicsBasinM.label>
+	<ClutterAlloyHydroponicsBasinM.description>Clutter Mod Furniture:
+		
+Medium size modified hydrophonic pot.</ClutterAlloyHydroponicsBasinM.description>
+
+<ClutterAlloyHydroponicsBasinB.label>Alloy Hydroponics basin (Big)</ClutterAlloyHydroponicsBasinB.label>
+	<ClutterAlloyHydroponicsBasinB.description>Clutter Mod Furniture:
+		
+2x2 Squaresize modified hydrophonic pot.</ClutterAlloyHydroponicsBasinB.description>
+
+<ClutterAlloyHydroponicsBasinS.label>Alloy Hydroponics basin (Square)</ClutterAlloyHydroponicsBasinS.label>
+	<ClutterAlloyHydroponicsBasinS.description>Clutter Mod Furniture:
+		
+Small size modified hydrophonic pot.</ClutterAlloyHydroponicsBasinS.description>
+
+<!-- PlasmaCloud.xml -->
+
+<PlasmaSponge.label>Cold Plasma Sponge</PlasmaSponge.label>
+	<PlasmaSponge.description>Sucks heat from anything that its standing on.</PlasmaSponge.description>
+
+<HoloOne.label>Hologram</HoloOne.label>
+	<HoloOne.description>Holographic projection</HoloOne.description>
+
+<!--ResearchTable_Replace.xml -->
+
+<ResearchBench.label>Research bench</ResearchBench.label>
+	<ResearchBench.description>Clutter Mod Replacment:
+		
+Researchers work here to discover new things.</ResearchBench.description>
+
+<!--Turret Base.xml -->
+
+<SentinelTurretA.label>Sentinel Turret</SentinelTurretA.label>
+	<SentinelTurretA.description>Bigger, thougher and nastier brother of improvised turret also hell alot more expensive and power hungry.</SentinelTurretA.description>
+
+<!--Weapons_Guns.xml -->
+
+<SpongeGun.label>SpongeGun</SpongeGun.label>
+	<SpongeGun.description>Ancient fire extinguisher</SpongeGun.description>
+
+<!--XConsoleUnit.xml -->	
+
+<Converter.label>Converter</Converter.label>
+	<Converter.description>Clutter Mod Production:
+		
+Converts silver and metal into stuff</Converter.description>
+
+
+</LanguageData>

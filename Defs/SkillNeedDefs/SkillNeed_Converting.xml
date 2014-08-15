@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SkillNeeds>
+
+	<SkillNeedDef Class="SkillNeedDef_BaseBonus">
+		<defName>ConvertingTime</defName>
+		<skill>Crafting</skill>
+		<baseFactor>2.5</baseFactor>
+		<bonusFactor>0.15</bonusFactor>
+		<description>Converts in {0}% the normal time.</description>
+	</SkillNeedDef>
+
+	<SkillNeedDef Class="SkillNeedDef_BaseBonus">
+		<defName>ConvertingEfficiency</defName>
+		<skill>Crafting</skill>
+		<baseFactor>1.0</baseFactor>
+		<bonusFactor>0.0</bonusFactor>
+		<description>Produces {0}% the normal amount of metal when converting.</description>
+	</SkillNeedDef>
+
+
+
+</SkillNeeds>

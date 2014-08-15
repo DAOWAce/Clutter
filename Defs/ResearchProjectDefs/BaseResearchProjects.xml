@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+<!--============== Way of the spoooonge ==============-->
+<ResearchProjectDef>
+    <defName>AFS</defName>
+    <label>Fire Suppression</label>
+    <description>
+While hunting for dead squirrel`s ( live ones are to dangerous obviously) one of colonist discover a spoonge, but this wasnt any normal spoonge it was a PLASMA SPOONGE!
+So jugging his memory after this event for a quite good while, he discover that his coffie cup is empty.
+If this makes no sense it means your not insane enough.
+
+With this research colonist will be able to refill thier coffie cups more ofter and learn the way of the spoooonge.
+
+Unlocks Security:
+Sponge Dispenser
+
+Unlocks Research:
+Plasma Resonator
+	</description>
+    <totalCost>30000</totalCost>
+</ResearchProjectDef>
+  
+
+<ResearchProjectDef>
+    <defName>AFSLife</defName>
+    <label>Plasma Resonator</label>
+    <description>  
+It was cryptic and very long, with its complex shapes all around its white layer. It might even be the ancient Da Vinci code for all he knew. And this passage "Press the red button to increase plasma resonation", it might be it, it might be just what he is looking for.
+There was only one obstacle in his way, he couldnt read.
+But he knew that he just dicovered prapobly the only manaul still in existance, that dont have pictures.
+
+With this research colonist might try to make wigs from plasma sponges.
+
+Unlocks Sponge Dispenser Bonus:
+Sponge Dispenser gains extra 5 charges
+Plasma Sponges gains extra lifespan
+
+Unlocks Research:
+Plasma Compression
+
+	</description>
+    <totalCost>30000</totalCost>
+	<prerequisites><li>AFS</li></prerequisites>
+</ResearchProjectDef>
+
+<ResearchProjectDef>
+    <defName>AFSCore</defName>
+    <label>Plasma Compression</label>
+    <description>
+They did sit in total silence with laser like focus, observing from a safe distance(heavily baricaded room) a group of squirrel`s that was skillfully reverse engineering (eating) a body of canepid or raiders corpse pile (it was very far safe distance). Colonist ware amaze by squirrels engineering knowledge so they baricaded themself more.
+
+With this research colonist will eat squirrel`s brains to boost tier engineering knowledge, or faint on sight of squirrel`s brains. (There are times when you wish you ware a zombie)
+
+Unlocks Production:
+Converter Unit (Able to craft Sponge gun)
+
+Unlocks Sponge Dispenser Bonus:
+Sponge Dispenser gains extra 10 charges
+Sponge Dispenser gains extra 90 hit points
+	</description>
+    <totalCost>30000</totalCost>
+	<prerequisites><li>AFSLife</li></prerequisites>
+	<researchMods>
+      <li>
+        <targetDefTypeName>ThingDef</targetDefTypeName>
+        <targetDefName>AutoFireSuppression</targetDefName>
+        <targetFieldName>maxHealth</targetFieldName>
+        <targetValInt>100</targetValInt>
+      </li>
+	</researchMods>
+</ResearchProjectDef>
+
+<!--============== Table-fuu ==============-->
+
+	<ResearchProjectDef>
+    <defName>TableDesign</defName>
+    <label>Tables Designs</label>
+    <description>
+After long debate about meaning of life and squirrel`s threat assessment, colonist decided to develope new table types so they dont need to chat so often or in most cases at all.
+	
+With this research colonist will uncover ancient art of table-fuu.
+	
+Unlocks Furniture:
+Modern Table (Square)
+Modern Table (Medium)
+Modern Table (Small)
+	
+Unlocks Research:
+Armored Table`s
+Table Customization
+	</description>
+    <totalCost>30000</totalCost>
+	
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>TableCustom</defName>
+    <label>Tables Customization</label>
+    <description>
+One to rule them all, One to find them, One to bring them all and in the darkness bind them. 
+And so it was decided that every colonist should get his own coffie cup.
+	
+With this research your colonist wont need to share coffie cups.
+	
+Unlocks Modern Tables Additional Customiation (click on the table function button).
+Apply to:
+Modern Table (Medium)
+Modern Table (Small)
+
+Also grants all modern tables a bit more awsomness and beauty.
+
+	</description>
+    <totalCost>30000</totalCost>
+	<prerequisites><li>TableDesign</li></prerequisites>
+	 <researchMods>
+      <li>
+        <targetDefTypeName>ThingDef</targetDefTypeName>
+        <targetDefName>ClutterSmallTableModern</targetDefName>
+        <targetFieldName>beauty</targetFieldName>
+        <targetValstring>Nice</targetValstring>
+      </li>
+	  <li>
+        <targetDefTypeName>ThingDef</targetDefTypeName>
+        <targetDefName>ClutterMediumTableModern</targetDefName>
+        <targetFieldName>beauty</targetFieldName>
+        <targetValstring>Nice</targetValstring>
+      </li>
+	  <li>
+        <targetDefTypeName>ThingDef</targetDefTypeName>
+        <targetDefName>ClutterSquareTableModern</targetDefName>
+        <targetFieldName>beauty</targetFieldName>
+        <targetValstring>Nice</targetValstring>
+      </li>
+	</researchMods>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>ArmoredTable</defName>
+    <label>Armored Table`s</label>
+    <description>
+While observing rimworld man-eating bugs, one of the colonist (the one not yet eaten) was bashing that bug with nearest thing he could find (almost fresh squirrel),that got him two ideas.
+First idea was to run like hell(squirrel wasnt dead after all), other idea was to make tables stronger just in case that squirrel would want a revange.
+Yes this completely makes no sense!
+
+With this research colonist will construct tables with stronger materials outside out, giving tables extra endurance and better cover abilities.
+
+Modern Tables Bonuses:	
+Tables cover up form 30% to 80%.
+Tables hit points up from 300 to 450.
+	</description>
+    <totalCost>60000</totalCost>
+	<prerequisites><li>TableDesign</li></prerequisites>
+    <researchMods>
+      <li>
+        <targetDefTypeName>ThingDef</targetDefTypeName>
+        <targetDefName>ClutterSmallTableModern</targetDefName>
+        <targetFieldName>maxHealth</targetFieldName>
+        <targetValInt>450</targetValInt>
+      </li>
+	  <li>
+        <targetDefTypeName>ThingDef</targetDefTypeName>
+        <targetDefName>ClutterSmallTableModern</targetDefName>
+        <targetFieldName>fillPercent</targetFieldName>
+        <targetValFloat>0.8</targetValFloat>
+      </li>
+	  <li>
+        <targetDefTypeName>ThingDef</targetDefTypeName>
+        <targetDefName>ClutterMediumTableModern</targetDefName>
+        <targetFieldName>maxHealth</targetFieldName>
+        <targetValInt>450</targetValInt>
+      </li>
+	  <li>
+        <targetDefTypeName>ThingDef</targetDefTypeName>
+        <targetDefName>ClutterMediumTableModern</targetDefName>
+        <targetFieldName>fillPercent</targetFieldName>
+        <targetValFloat>0.8</targetValFloat>
+      </li>
+	   <li>
+        <targetDefTypeName>ThingDef</targetDefTypeName>
+        <targetDefName>ClutterSquareTableModern</targetDefName>
+        <targetFieldName>maxHealth</targetFieldName>
+        <targetValInt>450</targetValInt>
+      </li>
+	  <li>
+        <targetDefTypeName>ThingDef</targetDefTypeName>
+        <targetDefName>ClutterSquareTableModern</targetDefName>
+        <targetFieldName>fillPercent</targetFieldName>
+        <targetValFloat>0.8</targetValFloat>
+      </li>
+	  
+	</researchMods>
+	
+  </ResearchProjectDef>
+
+</ResearchProjectDefs>

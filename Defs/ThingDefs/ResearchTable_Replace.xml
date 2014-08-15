@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+
+	<ThingDef Name="BuildingBase" Abstract="True">
+		<category>Building</category>
+		<soundBulletHit>BulletImpactMetal</soundBulletHit>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<surfaceNeeded>Light</surfaceNeeded>
+		<constructionEffect>ConstructMetal</constructionEffect>
+		<repairEffect>Repair</repairEffect>
+	</ThingDef>
+
+
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>ResearchBench</defName>
+    <eType>Building_ResearchBench</eType>
+    <label>Research bench</label>
+    <thingClass>Building_ResearchBench</thingClass>
+    <texturePath>Clutter/Things/Building/ResearchTable</texturePath>
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>Impassable</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <maxHealth>250</maxHealth>
+    <flammability>1.0</flammability>
+    <description>Clutter Mod Replacment:
+		
+Researchers work here to discover new things.</description>
+    <size>(2,1)</size>
+    <workToBuild>250</workToBuild>
+    <costList>
+      <li>
+        <thingDef>Metal</thingDef>
+        <count>30</count>
+      </li>
+    </costList>
+    <overdraw>false</overdraw>
+    <fillPercent>0.4</fillPercent>
+    <killedLeavings>
+      <li>
+        <thingDef>ChunkSlag</thingDef>
+        <count>4</count>
+      </li>
+    </killedLeavings>
+    <filthLeavings>
+      <li>
+        <thingDef>SlagRubble</thingDef>
+        <count>2</count>
+      </li>
+    </filthLeavings>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <interactionSquareOffset>(0,0,-1)</interactionSquareOffset>
+    <hasInteractionSquare>true</hasInteractionSquare>
+    <surfaceNeeded>Heavy</surfaceNeeded>
+    <designationCategory>Misc</designationCategory>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <itemSurface>true</itemSurface>
+    <designationHotKey>N</designationHotKey>
+  </ThingDef>
+  
+ </Buildings>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+<RecipeDef>
+		<defName>MakeSpongeGun</defName>
+		<label>Make Sponge Gun</label>
+		<description>Build ancient portable extinguisher device</description>
+		<jobString>Converting.</jobString>
+		<workAmount>500</workAmount>
+		<workTimeSkillNeed>ConvertingTime</workTimeSkillNeed>
+		<efficiencySkillNeed>ConvertingEfficiency</efficiencySkillNeed>
+		<workEffect>ButcherMechanoid</workEffect>
+        <sustainerSoundDef>Recipe_ButcherCorpseMechanoid</sustainerSoundDef>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Metal</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+			<li>
+				<thingDef>SpongeGun</thingDef>
+				<count>1</count>
+			</li>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Metal</li>
+				<li>Silver</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<skillGains>
+			<li>
+				<skill>Crafting</skill>
+				<xp>500</xp>
+			</li>
+		</skillGains>
+	</RecipeDef>
+
+<!-- <RecipeDef>
+		<defName>ConvertSilverS</defName>
+		<label>Basic Converting</label>
+		<description>Convert 4 silver pice`s in 1 metal pice</description>
+		<jobString>Converting silver into metal</jobString>
+		<workAmount>100</workAmount>
+		<workTimeSkillNeed>ConvertingTime</workTimeSkillNeed>
+		<efficiencySkillNeed>ConvertingEfficiency</efficiencySkillNeed>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			
+		</ingredients>
+		<products>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>1</count>
+			</li>
+		</products>
+		<parentIngredientFilter>
+			<thingDefs>
+				<li>Silver</li>
+			</thingDefs>
+		</parentIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>Silver</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>1</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>ConvertSilverA</defName>
+		<label>Small Converting</label>
+		<description>Convert 30 silver pice`s in 10 metal pice</description>
+		<jobString>Converting silver into metal</jobString>
+		<workAmount>600</workAmount>
+		<workTimeSkillNeed>ConvertingTime</workTimeSkillNeed>
+		<efficiencySkillNeed>ConvertingEfficiency</efficiencySkillNeed>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+			
+		</ingredients>
+		<products>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>10</count>
+			</li>
+		</products>
+		<parentIngredientFilter>
+			<thingDefs>
+				<li>Silver</li>
+			</thingDefs>
+		</parentIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>Silver</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>3</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>ConvertSilverB</defName>
+		<label>Medium Converting</label>
+		<description>Convert 75 silver pice`s in 25 metal pice</description>
+		<jobString>Converting silver into metal</jobString>
+		<workAmount>1200</workAmount>
+		<workTimeSkillNeed>ConvertingTime</workTimeSkillNeed>
+		<efficiencySkillNeed>ConvertingEfficiency</efficiencySkillNeed>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+			
+		</ingredients>
+		<products>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>25</count>
+			</li>
+		</products>
+		<parentIngredientFilter>
+			<thingDefs>
+				<li>Silver</li>
+			</thingDefs>
+		</parentIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>Silver</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>6</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>ConvertSilverC</defName>
+		<label>Massive Converting</label>
+		<description>Convert 750 silver pice`s in 250 metal pice</description>
+		<jobString>Converting silver into metal</jobString>
+		<workAmount>12000</workAmount>
+		<workTimeSkillNeed>ConvertingTime</workTimeSkillNeed>
+		<efficiencySkillNeed>ConvertingEfficiency</efficiencySkillNeed>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+					</thingDefs>
+				</filter>
+				<count>750</count>
+			</li>
+			
+		</ingredients>
+		<products>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>250</count>
+			</li>
+		</products>
+		<parentIngredientFilter>
+			<thingDefs>
+				<li>Silver</li>
+			</thingDefs>
+		</parentIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>Silver</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>6</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>ConvertSilverD</defName>
+		<label>Speed Converting</label>
+		<description>Convert 350 silver pice`s in 25 metal pice</description>
+		<jobString>Converting silver into metal</jobString>
+		<workAmount>100</workAmount>
+		<workTimeSkillNeed>ConvertingTime</workTimeSkillNeed>
+		<efficiencySkillNeed>ConvertingEfficiency</efficiencySkillNeed>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+					</thingDefs>
+				</filter>
+				<count>350</count>
+			</li>
+			
+		</ingredients>
+		<products>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>25</count>
+			</li>
+		</products>
+		<parentIngredientFilter>
+			<thingDefs>
+				<li>Silver</li>
+			</thingDefs>
+		</parentIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>Silver</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>3</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef> -->
+	
+	
+</RecipeDefs>

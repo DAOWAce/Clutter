@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+<ThingDef Name="BuildingBase" Abstract="True">
+		<category>Building</category>
+		<soundBulletHit>BulletImpactMetal</soundBulletHit>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<surfaceNeeded>Light</surfaceNeeded>
+		<constructionEffect>ConstructMetal</constructionEffect>
+		<repairEffect>Repair</repairEffect>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterFloorLampA</defName>
+		<eType>BuildingComplex</eType>
+		<label>Floor Lamp</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<texturePath>Clutter/Things/Building/FloorLamp</texturePath>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<maxHealth>100</maxHealth>
+		<flammability>1.0</flammability>
+		<selectable>true</selectable>
+		<beauty>Nice</beauty>
+		<description>Clutter Mod Furniture:
+		
+Simple floor lamp</description>
+		
+		<size>(1,1)</size>
+		<workToBuild>100</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>40</count>
+			</li>
+		</costList>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>200</basePowerConsumption>
+				
+			</li>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>12</glowRadius>
+				<glowColor>(217,217,217,0)</glowColor>
+			</li>
+		</comps>
+		<designationCategory>Furniture</designationCategory>
+		<sunShadowInfo>
+			<basewidth>0.3</basewidth>
+			<baseHeight>0.3</baseHeight>
+			<tallness>0.6</tallness>
+			<offset>(0,0,-0.1)</offset>
+		</sunShadowInfo>
+		<rotatable>true</rotatable>
+	</ThingDef>
+	
+
+	
+	
+	
+<ThingDef ParentName="BuildingBase">
+		<defName>ClutterWierdLamp</defName>
+		<eType>BuildingComplex</eType>
+		<label>Wierd lamp</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<texturePath>Clutter/Things/Building/RoundLampY</texturePath>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<maxHealth>100</maxHealth>
+		<flammability>1.0</flammability>
+		<selectable>true</selectable>
+		<beauty>Nice</beauty>
+		<description>Clutter Mod Furniture:
+		
+More advenced lamp in look temrs only</description>
+		
+		<size>(1,1)</size>
+		<workToBuild>100</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>40</count>
+			</li>
+		</costList>
+		
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>100</basePowerConsumption>
+				
+			</li>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>12</glowRadius>
+				<glowColor>(217,217,217,0)</glowColor>
+			</li>
+		</comps>
+		<designationCategory>Furniture</designationCategory>
+		<sunShadowInfo>
+			<basewidth>0.3</basewidth>
+			<baseHeight>0.3</baseHeight>
+			<tallness>0.6</tallness>
+			<offset>(0,0,-0.1)</offset>
+		</sunShadowInfo>
+		<rotatable>true</rotatable>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterWierdLampA</defName>
+		<eType>BuildingComplex</eType>
+		<label>Wierd lamp blue</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<texturePath>Clutter/Things/Building/RoundLampB</texturePath>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<maxHealth>100</maxHealth>
+		<flammability>1.0</flammability>
+		<selectable>true</selectable>
+		<beauty>Nice</beauty>
+		<description>Clutter Mod Furniture:
+		
+Bluish glowing wierd looking lamp</description>
+		
+		<size>(1,1)</size>
+		<workToBuild>100</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>40</count>
+			</li>
+		</costList>
+		
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>100</basePowerConsumption>
+				
+			</li>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>9</glowRadius>
+				<glowColor>(52,210,255,1)</glowColor>
+			</li>
+		</comps>
+		<designationCategory>Furniture</designationCategory>
+		<researchPrerequisite>ColoredLights</researchPrerequisite>
+		<sunShadowInfo>
+			<basewidth>0.3</basewidth>
+			<baseHeight>0.3</baseHeight>
+			<tallness>0.6</tallness>
+			<offset>(0,0,-0.1)</offset>
+		</sunShadowInfo>
+		<rotatable>true</rotatable>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterWierdLampB</defName>
+		<eType>BuildingComplex</eType>
+		<label>Wierd lamp red</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<texturePath>Clutter/Things/Building/RoundLampR</texturePath>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<maxHealth>100</maxHealth>
+		<flammability>1.0</flammability>
+		<selectable>true</selectable>
+		<beauty>Nice</beauty>
+		<description>Clutter Mod Furniture:
+		
+Redish glowing wierd looking lamp</description>
+		
+		<size>(1,1)</size>
+		<workToBuild>100</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>40</count>
+			</li>
+		</costList>
+		
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>100</basePowerConsumption>
+				
+			</li>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>9</glowRadius>
+				<glowColor>(255,82,52,1)</glowColor>
+			</li>
+		</comps>
+		<designationCategory>Furniture</designationCategory>
+		<researchPrerequisite>ColoredLights</researchPrerequisite>
+		<sunShadowInfo>
+			<basewidth>0.3</basewidth>
+			<baseHeight>0.3</baseHeight>
+			<tallness>0.6</tallness>
+			<offset>(0,0,-0.1)</offset>
+		</sunShadowInfo>
+		<rotatable>true</rotatable>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterLampC</defName>
+		<eType>BuildingComplex</eType>
+		<label>Wierd lamp green</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<texturePath>Clutter/Things/Building/RoundLampG</texturePath>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<maxHealth>100</maxHealth>
+		<flammability>1.0</flammability>
+		<selectable>true</selectable>
+		<beauty>Nice</beauty>
+		<description>Clutter Mod Furniture:
+		
+Greenish glowing wierd looking lamp</description>
+		
+		<size>(1,1)</size>
+		<workToBuild>100</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>40</count>
+			</li>
+		</costList>
+		
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>100</basePowerConsumption>
+				
+			</li>
+			<li>
+				<compClass>CompGlower</compClass>
+				<overlightRadius>7</overlightRadius>
+				<glowRadius>9</glowRadius>
+				<glowColor>(180,255,0,1)</glowColor>
+			</li>
+		</comps>
+		<designationCategory>Furniture</designationCategory>
+		<researchPrerequisite>ColoredLights</researchPrerequisite>
+		<sunShadowInfo>
+			<basewidth>0.3</basewidth>
+			<baseHeight>0.3</baseHeight>
+			<tallness>0.6</tallness>
+			<offset>(0,0,-0.1)</offset>
+		</sunShadowInfo>
+		<rotatable>true</rotatable>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>HoloEmitter</defName>
+		<eType>BuildingComplex</eType>
+		<label>Holographic Emitter</label>
+		<thingClass>Clutter.HoloBase</thingClass>
+		<category>Building</category>
+		<texturePath>Clutter/Things/Building/HoloPlantFull</texturePath>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<maxHealth>50</maxHealth>
+		<tickerType>Normal</tickerType>
+		<flammability>1.0</flammability>
+		<selectable>true</selectable>
+		<description>Clutter Mod Decoration:
+		
+Holographic projection of a plant</description>
+		<size>(1,1)</size>
+		<beauty>Nice</beauty>
+		<workToBuild>35</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>60</count>
+			</li>
+		</costList>
+		
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>200</basePowerConsumption>
+				
+			</li>
+			
+		</comps>
+		<designationCategory>Decoration</designationCategory>
+		<researchPrerequisite>ColoredLights</researchPrerequisite>
+		<sunShadowInfo>
+			<basewidth>0.3</basewidth>
+			<baseHeight>0.3</baseHeight>
+			<tallness>0.6</tallness>
+			<offset>(0,0,-0.1)</offset>
+		</sunShadowInfo>
+		<rotatable>false</rotatable>
+	</ThingDef>
+	
+	
+		<ThingDef ParentName="BuildingBase">
+		<defName>PlasmaGen</defName>
+		<eType>BuildingComplex</eType>
+		<label>Experimental Plasma Generator</label>
+		<thingClass>Clutter.PlasmaGen</thingClass>
+		<category>Building</category>
+		<texturePath>Clutter/Things/Building/Plasma_Gen</texturePath>
+		<altitudeLayer>Waist</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<maxHealth>300</maxHealth>
+		<flammability>1.0</flammability>
+		<selectable>true</selectable>
+		<description>Clutter Mod Power:
+
+Almost self sustaining plasma generator, can sustain up to two light bulbs!
+
+(Require power between energy discharges)</description>
+		<size>(1,1)</size>
+		<beauty>Nice</beauty>
+		<tickerType>Normal</tickerType>
+		<workToBuild>35</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>60</count>
+			</li>
+		</costList>
+		
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>1</basePowerConsumption>
+				
+			</li>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>2</glowRadius>
+				<glowColor>(0,136,0,0)</glowColor>
+			</li>
+		</comps>
+		<designationCategory>Power</designationCategory>
+		
+		<rotatable>true</rotatable>
+	</ThingDef>
+	
+</Buildings>

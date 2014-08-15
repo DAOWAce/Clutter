@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+	<!-- ==================== Bases ========================== -->
+
+	<ThingDef Name="BaseGun" Abstract="True">
+		<category>Item</category>
+		<eType>Equipment</eType>
+		<thingClass>Equipment</thingClass>
+		<label>Gun</label>
+		<equipmentType>Primary</equipmentType>
+		<isGun>True</isGun>
+		<pathCost>10</pathCost>
+		<useStandardHealth>True</useStandardHealth>
+		<selectable>True</selectable>
+		<maxHealth>100</maxHealth>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<techLevel>Spacer</techLevel>
+		<storeCategories>
+			<li>Weapons</li>
+		</storeCategories>
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<comps>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+		</comps>
+		<verb>
+			<id>Nonnative</id>
+			<verbClass>Verb_Shoot</verbClass>
+			<cooldownTicks>15</cooldownTicks>
+			<label>VerbGun</label>
+			<description>Fire a bullet.</description>
+			<hasStandardCommand>true</hasStandardCommand>
+			<targetParams>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>true</canTargetBuildings>
+				<worldObjectTargetsMustBeAutoAttackable>true</worldObjectTargetsMustBeAutoAttackable>
+			</targetParams>
+			<canMiss>true</canMiss>
+		</verb>
+	</ThingDef>
+
+	<ThingDef Name="BaseBullet" Abstract="True">
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<thingClass>Bullet</thingClass>
+		<label>Bullet</label>
+		<useStandardHealth>False</useStandardHealth>
+		<neverMultiSelect>True</neverMultiSelect>
+		<baseMaterialType>Transparent</baseMaterialType>
+	</ThingDef>
+
+<!-- ============================================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_SentinelTurret</defName>
+		<label>Sentinel Turret Rounds</label>
+		<texturePath>Clutter/Things/Building/CannonRound</texturePath>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGun">
+		<defName>Gun_SentinelTurret</defName>
+		<label>Sentinel Turret</label>
+		<menuHidden>true</menuHidden>
+		<description>Sentinel Cannon type.</description>
+		<texturePath>Clutter/Things/Building/TurretTop</texturePath>
+		<soundInteract>InteractShotgun</soundInteract>
+		<canBeSpawningInventory>false</canBeSpawningInventory>
+		<tradersCarry>false</tradersCarry>
+		<verb>
+			<projectileDef>Bullet_SentinelTurret</projectileDef>
+			<accuracyTouch>1</accuracyTouch>
+			<accuracyShort>1</accuracyShort>
+			<accuracyMedium>0.9</accuracyMedium>
+			<accuracyLong>0.9</accuracyLong>
+			<warmupTicks>60</warmupTicks>
+			<range>50</range>
+			<fireSound>ShotShotgun</fireSound>
+		</verb>
+	</ThingDef>
+	</ThingDefs>
+
+<!-- ============================================== -->
+

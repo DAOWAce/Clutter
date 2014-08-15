@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<WorkGivers>
+
+	<WorkGiverDef>
+		<defName>DoBillsConverter</defName>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<workTableDef>Converter</workTableDef>
+		<verb>convert</verb>
+    <gerund>converting</gerund>
+	</WorkGiverDef>
+</WorkGivers>
