@@ -18,7 +18,7 @@
 		<ThingClass>Building_WorkTable</ThingClass>
 		<Description>Clutter Mod Production:
 		
-Converts silver and metal into stuff</Description>
+Converts silver and metal into stuff.</Description>
 		<TexturePath>Clutter/Things/Building/Converter</TexturePath>
 		<CostList>
 			<li>

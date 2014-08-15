@@ -4,7 +4,7 @@
 <RecipeDef>
 		<defName>MakeSpongeGun</defName>
 		<label>Make Sponge Gun</label>
-		<description>Build ancient portable extinguisher device</description>
+		<description>Build ancient portable extinguisher device.</description>
 		<jobString>Converting.</jobString>
 		<workAmount>500</workAmount>
 		<workTimeSkillNeed>ConvertingTime</workTimeSkillNeed>
@@ -52,7 +52,7 @@
 <!-- <RecipeDef>
 		<defName>ConvertSilverS</defName>
 		<label>Basic Converting</label>
-		<description>Convert 4 silver pice`s in 1 metal pice</description>
+		<description>Convert 4 silver into 1 metal.</description>
 		<jobString>Converting silver into metal</jobString>
 		<workAmount>100</workAmount>
 		<workTimeSkillNeed>ConvertingTime</workTimeSkillNeed>
@@ -95,7 +95,7 @@
 	<RecipeDef>
 		<defName>ConvertSilverA</defName>
 		<label>Small Converting</label>
-		<description>Convert 30 silver pice`s in 10 metal pice</description>
+		<description>Convert 30 silver into 10 metal.</description>
 		<jobString>Converting silver into metal</jobString>
 		<workAmount>600</workAmount>
 		<workTimeSkillNeed>ConvertingTime</workTimeSkillNeed>
@@ -138,7 +138,7 @@
 	<RecipeDef>
 		<defName>ConvertSilverB</defName>
 		<label>Medium Converting</label>
-		<description>Convert 75 silver pice`s in 25 metal pice</description>
+		<description>Convert 75 silver pieces into 25 metal.</description>
 		<jobString>Converting silver into metal</jobString>
 		<workAmount>1200</workAmount>
 		<workTimeSkillNeed>ConvertingTime</workTimeSkillNeed>
@@ -181,7 +181,7 @@
 	<RecipeDef>
 		<defName>ConvertSilverC</defName>
 		<label>Massive Converting</label>
-		<description>Convert 750 silver pice`s in 250 metal pice</description>
+		<description>Convert 750 silver pieces into 250 metal.</description>
 		<jobString>Converting silver into metal</jobString>
 		<workAmount>12000</workAmount>
 		<workTimeSkillNeed>ConvertingTime</workTimeSkillNeed>
@@ -224,7 +224,7 @@
 	<RecipeDef>
 		<defName>ConvertSilverD</defName>
 		<label>Speed Converting</label>
-		<description>Convert 350 silver pice`s in 25 metal pice</description>
+		<description>Convert 350 silver into 25 metal.</description>
 		<jobString>Converting silver into metal</jobString>
 		<workAmount>100</workAmount>
 		<workTimeSkillNeed>ConvertingTime</workTimeSkillNeed>

@@ -22,7 +22,7 @@
 		<RenderPrecedence>245</RenderPrecedence>
 		<Description>Clutter Mod Floor:
 		
-Miracles of modern science, wood panels made of metal</Description>
+Miracles of modern science, wood panels made of metal.</Description>
 		<TexturePath>Clutter/Floors/FloorA</TexturePath>
 		<uiIconPath>Clutter/Floors/FloorAI</uiIconPath>
 		<Beauty>Nice</Beauty>
@@ -41,7 +41,7 @@ Miracles of modern science, wood panels made of metal</Description>
 		<RenderPrecedence>244</RenderPrecedence>
 		<Description>Clutter Mod Floor:
 		
-Terminator was made from this, or was he ?</Description>
+Terminator was made from this.. or was he?</Description>
 		<TexturePath>Clutter/Floors/FloorB</TexturePath>
 		<uiIconPath>Clutter/Floors/FloorBI</uiIconPath>
 		<Beauty>Nice</Beauty>
@@ -60,7 +60,7 @@ Terminator was made from this, or was he ?</Description>
 		<RenderPrecedence>243</RenderPrecedence>
 		<Description>Clutter Mod Floor:
 		
-Concrete with pattern, and its all made from stone, yes that is advenced science!</Description>
+Concrete with pattern, and it's all made from stone. Yes, that is advanced science!</Description>
 		<TexturePath>Clutter/Floors/FloorC</TexturePath>
 		<uiIconPath>Clutter/Floors/FloorCI</uiIconPath>
 		<pathCost>-2</pathCost>
@@ -79,7 +79,7 @@ Concrete with pattern, and its all made from stone, yes that is advenced science
 		<RenderPrecedence>242</RenderPrecedence>
 		<Description>Clutter Mod Floor:
 		
-This panels will last ages, unless they rust.</Description>
+These panels will last ages, unless they rust.</Description>
 		<TexturePath>Clutter/Floors/FloorE</TexturePath>
 		<uiIconPath>Clutter/Floors/FloorEI</uiIconPath>
 		<pathCost>-1</pathCost>
@@ -99,7 +99,7 @@ This panels will last ages, unless they rust.</Description>
 		<RenderPrecedence>241</RenderPrecedence>
 		<Description>Clutter Mod Floor:
 		
-Perfect fit for morgue</Description>
+Perfect fit for a morgue.</Description>
 		<TexturePath>Clutter/Floors/FloorF</TexturePath>
 		<uiIconPath>Clutter/Floors/FloorFI</uiIconPath>
 		<pathCost>-1</pathCost>
@@ -118,7 +118,7 @@ Perfect fit for morgue</Description>
 		<RenderPrecedence>246</RenderPrecedence>
 		<Description>Clutter Mod Floor:
 		
-Made out of unknown alloy, hopfully its not repainted wood.</Description>
+Made out of an unknown alloy, hopefully it's not repainted wood.</Description>
 		<TexturePath>Clutter/Floors/FloorG</TexturePath>
 		<uiIconPath>Clutter/Floors/FloorGI</uiIconPath>
 		<Beauty>Nice</Beauty>

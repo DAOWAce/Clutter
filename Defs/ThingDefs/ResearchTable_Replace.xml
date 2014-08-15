@@ -25,7 +25,7 @@
     <castEdgeShadows>true</castEdgeShadows>
     <maxHealth>250</maxHealth>
     <flammability>1.0</flammability>
-    <description>Clutter Mod Replacment:
+    <description>Clutter Mod Replacement:
 		
 Researchers work here to discover new things.</description>
     <size>(2,1)</size>

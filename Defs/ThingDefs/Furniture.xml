@@ -117,7 +117,7 @@ A bit odd pod like bed. Rest effectiveness: 200%</Description>
 		<maxHealth>75</maxHealth>
 		<description>Clutter Mod Furniture
 		
-Its not making colonist lazy, in theory.</description>
+It's not making colonist lazy, in theory.</description>
 		<size>(2,1)</size>
 		<workToBuild>750</workToBuild>
 		<flammability>1.0</flammability>
@@ -164,7 +164,7 @@ Its not making colonist lazy, in theory.</description>
 		<maxHealth>75</maxHealth>
 		<description>Clutter Mod Furniture
 		
-Old fasion, confy and fully out of metal.</description>
+Old fashioned, comfy and fully out of metal.</description>
 		<size>(1,1)</size>
 		<workToBuild>150</workToBuild>
 		<flammability>1.0</flammability>
@@ -200,7 +200,7 @@ Old fasion, confy and fully out of metal.</description>
 		<maxHealth>75</maxHealth>
 		<description>Clutter Mod Furniture
 		
-Round chair thers not much to say.</description>
+A round chair. There's not much to say.</description>
 		<size>(1,1)</size>
 		<workToBuild>150</workToBuild>
 		<flammability>1.0</flammability>
@@ -240,7 +240,7 @@ Round chair thers not much to say.</description>
 		<maxHealth>150</maxHealth>
 		<description>Clutter Mod Furniture
 		
-Small, durable, handy in bar fights.</description>
+Small, durable and handy in bar fights.</description>
 		<size>(1,1)</size>
 		<workToBuild>300</workToBuild>
 		<flammability>1.0</flammability>
@@ -285,7 +285,7 @@ Small, durable, handy in bar fights.</description>
 		<description>Clutter Mod Furniture:
 		
 		
-Standart square table, just a bit thougher.
+Standard square table, just a bit tougher.
 </description>
 		<size>(2,2)</size>
 		<workToBuild>300</workToBuild>
@@ -333,7 +333,7 @@ Standart square table, just a bit thougher.
 		<beauty>NiceTiny</beauty>
 		<description>Clutter Mod Furniture:
 		
-Small table for thous antisocial types</description>
+Small table for those antisocial types</description>
 		<size>(1,1)</size>
 		<workToBuild>300</workToBuild>
 		<costList>
@@ -380,7 +380,7 @@ Small table for thous antisocial types</description>
 		<beauty>NiceTiny</beauty>
 		<description>Clutter Mod Furniture:
 		
-Medium size table
+Medium sized table.
 </description>
 		<size>(2,1)</size>
 		<workToBuild>300</workToBuild>
@@ -430,7 +430,7 @@ Medium size table
 		<description>Clutter Mod Furniture:
 		
 Used for storing all kinds of meals.
-Its made of plastic!.</description>
+It's made of plastic!</description>
 		<size>(1,2)</size>
 		<workToBuild>300</workToBuild>
 		<costList>
@@ -480,7 +480,7 @@ Its made of plastic!.</description>
 		<flammability>1.0</flammability>
 		<description>Clutter Mod Production:
 		
-Now your colonists wont stand in a pile of radioactive uranium, they will have it on face level.
+Now your colonists won't stand in a pile of radioactive uranium, they will have it on face level.
 (Store for resources)</description>
 		<size>(2,1)</size>
 		<workToBuild>300</workToBuild>
@@ -535,7 +535,7 @@ Now your colonists wont stand in a pile of radioactive uranium, they will have i
 		<flammability>1.0</flammability>
 		<description>Clutter Mod Furniture:
 		
-Safe way to store your dru.. medicine.
+Safe way to store your dru-- medicine.
 (Store for medikits)</description>
 		<size>(1,1)</size>
 		<workToBuild>300</workToBuild>
@@ -589,7 +589,7 @@ Safe way to store your dru.. medicine.
 		<maxHealth>200</maxHealth>
 		<description>Clutter Mod Furniture:
 		
-Medium size modified hydrophonic pot.</description>
+Medium sized modified hydroponic pot.</description>
 		<size>(2,1)</size>
 		<beauty>Nice</beauty>
 		<workToBuild>800</workToBuild>
@@ -651,7 +651,7 @@ Medium size modified hydrophonic pot.</description>
 		<maxHealth>300</maxHealth>
 		<description>Clutter Mod Furniture:
 		
-2x2 Squaresize modified hydrophonic pot.</description>
+Large sized modified hydroponic pot.</description>
 		<size>(3,1)</size>
 		<beauty>Nice</beauty>
 		<workToBuild>1200</workToBuild>
@@ -714,7 +714,7 @@ Medium size modified hydrophonic pot.</description>
 		<maxHealth>400</maxHealth>
 		<description>Clutter Mod Furniture:
 		
-Small size modified hydrophonic pot.</description>
+Small sized modified hydroponic pot.</description>
 		<size>(2,2)</size>
 		<beauty>Nice</beauty>
 		<workToBuild>1600</workToBuild>

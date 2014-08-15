@@ -36,7 +36,7 @@
 				<basePowerConsumption>1000</basePowerConsumption>
 			</li>
 		</comps>
-		<description>Bigger, thougher and nastier brother of improvised turret also hell alot more expensive and power hungry.</description>
+		<description>Bigger, tougher and nastier brother of improvised turret. Also a hell of a lot more expensive and power hungry.</description>
 		<flammability>4.0</flammability>
 		<size>(1,1)</size>
 		<passability>Impassable</passability>

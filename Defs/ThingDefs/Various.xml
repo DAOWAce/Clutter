@@ -18,7 +18,7 @@
 			</li>
 		</comps>
 		<description>
-Sucks heat from anything that its standing on.
+Sucks heat from anything that it's standing on.
 		</description>
 		<textureFolderPath>Clutter/Devices/PlasmaCloud</textureFolderPath>
 		<baseMaterialType>MotePostLight</baseMaterialType>
@@ -46,7 +46,7 @@ Sucks heat from anything that its standing on.
 			</li>
 		</comps>
 		<description>
-Holographic projection
+Holographic projection.
 		</description>
 		
 		<pathCost>80</pathCost>
@@ -76,7 +76,7 @@ Holographic projection
 	<ThingDef>
 		<defName>CommUnitTop</defName>
 		<eType>Item</eType>
-		<label>Comm Unit Antena</label>
+		<label>Comm Unit Antenna</label>
 		<category>Item</category>
 		<thingClass>Clutter.RadarAntena</thingClass>
 		<texturePath>Clutter/Devices/ComUnitTop</texturePath>
@@ -86,7 +86,7 @@ Holographic projection
 		<overdraw>true</overdraw>
 		<size>2,2</size>
 		<description>
-Communication Unit Relay
+Communication Unit Relay.
 		</description>
 		<pathCost>80</pathCost>
 		<comps>

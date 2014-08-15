@@ -15,7 +15,7 @@
 <ThingDef ParentName="BuildingBase">
 		<defName>ClutterCogCrate</defName>
 		<eType>BuildingInert</eType>
-		<label>Cog Carate</label>
+		<label>Cog Crate</label>
 		<thingClass>Building</thingClass>
 		<category>Building</category>
 		<texturePath>Clutter/Things/Building/CogCrate</texturePath>
@@ -28,7 +28,7 @@
 		<size>1,1</size>
 		<description>Clutter Mod Decoration:
 		
-Crate with a cog</description>
+Crate with a cog.</description>
 		<workToBuild>17</workToBuild>
 		<costList>
 			<li>
@@ -68,7 +68,7 @@ Crate with a cog</description>
 		<maxHealth>150</maxHealth>
 		<description>Clutter Mod Decoration:
 		
-Already used shelf</description>
+Already used shelf.</description>
 		<workToBuild>50</workToBuild>
 		<costList>
 			<li>
@@ -108,7 +108,7 @@ Already used shelf</description>
 		<maxHealth>150</maxHealth>
 		<description>Clutter Mod Decoration:
 		
-Simple hopefully still working locker</description>
+Simple, hopefully still working locker.</description>
 		<workToBuild>10</workToBuild>
 		<costList>
 			<li>
@@ -135,10 +135,10 @@ Simple hopefully still working locker</description>
 	<ThingDef ParentName="BuildingBase">
 		<defName>ClutterTrashBin</defName>
 		<eType>BuildingComplex</eType>
-		<label>Trashbin (auto)</label>
+		<label>Trash bin (auto)</label>
 		<description>Clutter Mod Furniture:
 		
-Trashbin stol... barrowed from experimental lab of Haplo industries, it comes with short range cleaning robot.</description>
+Trash bin stol-- borrowed from an experimental lab of Haplo industries. It comes with short range cleaning robot.</description>
 		<thingClass>Clutter.Trashbin</thingClass>
 		<category>Building</category>
 		<texturePath>Clutter/Things/Building/TrashBin</texturePath>
@@ -196,7 +196,7 @@ Trashbin stol... barrowed from experimental lab of Haplo industries, it comes wi
 		<maxHealth>150</maxHealth>
 		<description>Clutter Mod Decoration:
 		
-Place where you can seal your socks with 20 digit code</description>
+Place where you can seal your socks with a 20 digit code.</description>
 		<workToBuild>10</workToBuild>
 		<costList>
 			<li>
@@ -236,7 +236,7 @@ Place where you can seal your socks with 20 digit code</description>
 		<size>(2,1)</size>
 		<description>Clutter Mod Decoration:
 		
-Come with a plastic plant and full coffie cup!</description>
+Comes with a plastic plant and full coffee cup!</description>
 		<workToBuild>100</workToBuild>
 		<costList>
 			<li>
@@ -269,7 +269,7 @@ Come with a plastic plant and full coffie cup!</description>
 		<maxHealth>200</maxHealth>
 		<description>Clutter Mod Decoration:
 
-Advenced looking version of kitchen mixer. Now with more buttons!</description>
+Advanced looking version of a kitchen mixer. Now with more buttons!</description>
 		<workToBuild>10</workToBuild>
 		<costList>
 			<li>
@@ -306,7 +306,7 @@ Advenced looking version of kitchen mixer. Now with more buttons!</description>
 		<maxHealth>500</maxHealth>
 		<description>Clutter Mod Decoration:
 		
-Delux edition now with auto-flush feature!</description>
+Deluxe Edition. Now with an auto-flush feature!</description>
 		<workToBuild>10</workToBuild>
 		<costList>
 			<li>
@@ -343,7 +343,7 @@ Delux edition now with auto-flush feature!</description>
 		<maxHealth>200</maxHealth>
 		<description>Clutter Mod Decoration:
 		
-Small versions of Skynet 9000, now with whole 2,9% less probability of taking over the world.</description>
+Small version of Skynet 9000, now with a whole 2.9% less probability of taking over the world.</description>
 		<workToBuild>10</workToBuild>
 		<costList>
 			<li>

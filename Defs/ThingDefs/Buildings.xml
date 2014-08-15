@@ -18,7 +18,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>ClutterHoloNade</defName>
 		<eType>BuildingInert</eType>
-		<label>Nade Combat Dummie</label>
+		<label>Nade Combat Dummy</label>
 		<thingClass>Building</thingClass>
 		<category>Building</category>
 		<texturePath>Clutter/Things/Building/Nade</texturePath>
@@ -30,7 +30,7 @@
 		<maxHealth>3000</maxHealth>
 		<description>Clutter Mod Security:
 		
-Combat dummie of mighty worrior Nadezhda.
+Combat dummy of mighty warrior Nadezhda.
 (Distract enemies from shooting at you)</description>
 		<overdraw>true</overdraw>
 		<flammability>0</flammability>
@@ -95,7 +95,7 @@ Combat dummie of mighty worrior Nadezhda.
 		<flammability>0</flammability>
 		<description>Clutter Mod Structure:
 
-It`s a wall and it`s shiny!</description>
+It's a wall and it's shiny!</description>
 		<workToBuild>75</workToBuild>
 		<fillPercent>1</fillPercent>
 		<linkFlags>
@@ -148,7 +148,7 @@ It`s a wall and it`s shiny!</description>
 		<maxHealth>300</maxHealth>
 		<description>Clutter Mod Structure:
 		
-To stop thous pesky creatures eating from your storage.</description>
+To stop those pesky creatures eating from your storage.</description>
 		<placingDraggableDimensions>1</placingDraggableDimensions>
 		<workToBuild>50</workToBuild>
 		<costList>
@@ -189,7 +189,7 @@ To stop thous pesky creatures eating from your storage.</description>
 		<maxHealth>700</maxHealth>
 		<description>Clutter Mod Structure:
 		
-High fence build mostly from concrete. Good as a cover and transmits power.</description>
+High fence built mostly from concrete. Good as a cover and transmits power.</description>
 		<placingDraggableDimensions>1</placingDraggableDimensions>
 		<workToBuild>50</workToBuild>
 		<costList>
@@ -239,9 +239,9 @@ High fence build mostly from concrete. Good as a cover and transmits power.</des
 		<size>2,2</size>
 		<baseMaterialType>Transparent</baseMaterialType>
 		<description>Clutter Mod Misc:
-(Draw alot of power when active, cant be placed under roof)		
-Used to call traders with long range singals if your lucky.
-If your not so lucky then well ... .
+(Draw a lot of power when active, can't be placed under roof)		
+Used to call traders with long range signals if you're lucky.
+If you're not so lucky then, well...
 </description>
 		<flammability>0</flammability>
 		<fillPercent>1</fillPercent>
